@@ -24,9 +24,7 @@ const contaPaga = false;
 //0 --> False
 //1 --> True
 
-console.log(0 == false); //retorna verdadeiro(true)
-console.log('' == false); //retorna verdadeiro(true)
-console.log(1 == true); //retorna verdadeiro(true)
+onsole.log(1 == true); //retorna verdadeiro()
 console.log(contaPaga == 1);
 
 //undefinedv --> Não definido;
@@ -41,3 +39,28 @@ console.log(typeof minhaVar);
 console.log(typeof numero);
 console.log(typeof varNull);
 console.log(typeof string);
+
+//convsersao implicita
+
+const numeronumber = 786;
+const numerostring = "786";
+
+console.log(numeronumber == numerostring);
+console.log(numeronumber === numerostring);
+console.log(numeronumber + numerostring);
+
+//convsersão explícita
+//number()
+//string()
+
+console.log(numeronumber + Number(numerostring))
+
+const numeroconvertido = Number(numerostring)
+
+console.log(numeronumber + numeroconvertido)
+
+const numeroconvertidoerrado = Number("456a")
+
+console.log(numeronumber + numeroconvertidoerrado)
+
+
